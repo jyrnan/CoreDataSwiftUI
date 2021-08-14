@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D276D8F926C7927C00E79ED2 /* NSManagedObjectContext++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276D8F826C7927C00E79ED2 /* NSManagedObjectContext++.swift */; };
+		D276D8FB26C7991D00E79ED2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276D8FA26C7991D00E79ED2 /* DetailView.swift */; };
 		D2CAD3E026C7595700E0AAA3 /* CoreDataSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD3DF26C7595700E0AAA3 /* CoreDataSwiftUIApp.swift */; };
 		D2CAD3E226C7595700E0AAA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD3E126C7595700E0AAA3 /* ContentView.swift */; };
 		D2CAD3E426C7595900E0AAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CAD3E326C7595900E0AAA3 /* Assets.xcassets */; };
@@ -18,6 +20,7 @@
 		D2CAD40226C7595A00E0AAA3 /* CoreDataSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD40126C7595A00E0AAA3 /* CoreDataSwiftUIUITestsLaunchTests.swift */; };
 		D2CAD40F26C7598B00E0AAA3 /* ManagedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD40E26C7598B00E0AAA3 /* ManagedProtocol.swift */; };
 		D2CAD41126C75EAD00E0AAA3 /* Item+Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD41026C75EAD00E0AAA3 /* Item+Managed.swift */; };
+		D2CAD41326C783B300E0AAA3 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD41226C783B300E0AAA3 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D276D8F826C7927C00E79ED2 /* NSManagedObjectContext++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext++.swift"; sourceTree = "<group>"; };
+		D276D8FA26C7991D00E79ED2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D2CAD3DC26C7595700E0AAA3 /* CoreDataSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CAD3DF26C7595700E0AAA3 /* CoreDataSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwiftUIApp.swift; sourceTree = "<group>"; };
 		D2CAD3E126C7595700E0AAA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		D2CAD40126C7595A00E0AAA3 /* CoreDataSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D2CAD40E26C7598B00E0AAA3 /* ManagedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedProtocol.swift; sourceTree = "<group>"; };
 		D2CAD41026C75EAD00E0AAA3 /* Item+Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Managed.swift"; sourceTree = "<group>"; };
+		D2CAD41226C783B300E0AAA3 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +110,12 @@
 			children = (
 				D2CAD3DF26C7595700E0AAA3 /* CoreDataSwiftUIApp.swift */,
 				D2CAD3E126C7595700E0AAA3 /* ContentView.swift */,
+				D276D8FA26C7991D00E79ED2 /* DetailView.swift */,
+				D2CAD41226C783B300E0AAA3 /* ContentViewModel.swift */,
 				D2CAD3E326C7595900E0AAA3 /* Assets.xcassets */,
 				D2CAD3E826C7595900E0AAA3 /* Persistence.swift */,
 				D2CAD40E26C7598B00E0AAA3 /* ManagedProtocol.swift */,
+				D276D8F826C7927C00E79ED2 /* NSManagedObjectContext++.swift */,
 				D2CAD41026C75EAD00E0AAA3 /* Item+Managed.swift */,
 				D2CAD3EA26C7595900E0AAA3 /* CoreDataSwiftUI.xcdatamodeld */,
 				D2CAD3E526C7595900E0AAA3 /* Preview Content */,
@@ -270,8 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CAD41126C75EAD00E0AAA3 /* Item+Managed.swift in Sources */,
+				D276D8F926C7927C00E79ED2 /* NSManagedObjectContext++.swift in Sources */,
+				D276D8FB26C7991D00E79ED2 /* DetailView.swift in Sources */,
 				D2CAD3E926C7595900E0AAA3 /* Persistence.swift in Sources */,
 				D2CAD40F26C7598B00E0AAA3 /* ManagedProtocol.swift in Sources */,
+				D2CAD41326C783B300E0AAA3 /* ContentViewModel.swift in Sources */,
 				D2CAD3E226C7595700E0AAA3 /* ContentView.swift in Sources */,
 				D2CAD3EC26C7595900E0AAA3 /* CoreDataSwiftUI.xcdatamodeld in Sources */,
 				D2CAD3E026C7595700E0AAA3 /* CoreDataSwiftUIApp.swift in Sources */,
@@ -443,7 +455,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +485,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

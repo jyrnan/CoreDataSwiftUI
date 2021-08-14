@@ -10,11 +10,14 @@ import CoreData
 
 extension Item: Managed {
     static var defaultSortDescriptors: [NSSortDescriptor] {
-        return [NSSortDescriptor(key: #keyPath(timestamp), ascending: false)]
+        return [NSSortDescriptor(key: #keyPath(timestamp), ascending: true)]
     }
 }
 
-func test() {
-    let request = Item.sortedFetchRequest
-    
+extension Item {
+    static func insert(into context: NSManagedObjectContext) -> Item {
+        let item: Item = context.insertObject()
+        item.timestamp = Date()
+        return item
+    }
 }
