@@ -22,6 +22,7 @@ extension NSManagedObjectContext {
             return true
         } catch {
             rollback()
+            print(#function, "RollBack")
             return false
         }
     }

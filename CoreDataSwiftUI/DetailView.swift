@@ -16,6 +16,7 @@ struct DetailView: View {
             Text("Count: \(item.count)")
             Button(action: {
                 item.count += 1
+                item.colors = ["Hello", "world"]
             }, label: {Text("update")})
         }
     }

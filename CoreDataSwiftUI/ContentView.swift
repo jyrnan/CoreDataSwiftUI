@@ -21,16 +21,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-//                ForEach(items) { item in
-//                    Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-//                }
-//                .onDelete(perform: deleteItems)
-//
-//                Divider()
-                
+
                 ForEach(viewModel.items) { item in
                     NavigationLink(destination: DetailView(item: item)){
                         Text("Item at \(item.timestamp!, formatter: itemFormatter), count: \(item.count)")}
+                    Text(item.colors?.joined(separator: " ") ?? "N/A")
                 }
                 .onDelete(perform: viewModel.deleteItems(offsets:))
             }
@@ -46,12 +41,15 @@ struct ContentView: View {
                     Button(action: viewModel.refresh) {
                         Label("Refresh", systemImage: "cross")
                     }
+                    
+                    NavigationLink(destination: FilterView(), label: {Text("next")})
                 }
                 
                    
                
             }
             .navigationTitle("CoreData")
+            
         }
     }
     

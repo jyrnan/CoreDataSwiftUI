@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D276D8F926C7927C00E79ED2 /* NSManagedObjectContext++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276D8F826C7927C00E79ED2 /* NSManagedObjectContext++.swift */; };
 		D276D8FB26C7991D00E79ED2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276D8FA26C7991D00E79ED2 /* DetailView.swift */; };
+		D276D90826C90B1B00E79ED2 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D276D90726C90B1B00E79ED2 /* FilterView.swift */; };
 		D2CAD3E026C7595700E0AAA3 /* CoreDataSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD3DF26C7595700E0AAA3 /* CoreDataSwiftUIApp.swift */; };
 		D2CAD3E226C7595700E0AAA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CAD3E126C7595700E0AAA3 /* ContentView.swift */; };
 		D2CAD3E426C7595900E0AAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CAD3E326C7595900E0AAA3 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		D276D8F826C7927C00E79ED2 /* NSManagedObjectContext++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext++.swift"; sourceTree = "<group>"; };
 		D276D8FA26C7991D00E79ED2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D276D90726C90B1B00E79ED2 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		D2CAD3DC26C7595700E0AAA3 /* CoreDataSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CAD3DF26C7595700E0AAA3 /* CoreDataSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSwiftUIApp.swift; sourceTree = "<group>"; };
 		D2CAD3E126C7595700E0AAA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +87,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D276D8FC26C8AD8400E79ED2 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				D2CAD41226C783B300E0AAA3 /* ContentViewModel.swift */,
+				D2CAD3E826C7595900E0AAA3 /* Persistence.swift */,
+				D2CAD40E26C7598B00E0AAA3 /* ManagedProtocol.swift */,
+				D276D8F826C7927C00E79ED2 /* NSManagedObjectContext++.swift */,
+				D2CAD41026C75EAD00E0AAA3 /* Item+Managed.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
 		D2CAD3D326C7595700E0AAA3 = {
 			isa = PBXGroup;
 			children = (
@@ -111,12 +125,9 @@
 				D2CAD3DF26C7595700E0AAA3 /* CoreDataSwiftUIApp.swift */,
 				D2CAD3E126C7595700E0AAA3 /* ContentView.swift */,
 				D276D8FA26C7991D00E79ED2 /* DetailView.swift */,
-				D2CAD41226C783B300E0AAA3 /* ContentViewModel.swift */,
+				D276D90726C90B1B00E79ED2 /* FilterView.swift */,
 				D2CAD3E326C7595900E0AAA3 /* Assets.xcassets */,
-				D2CAD3E826C7595900E0AAA3 /* Persistence.swift */,
-				D2CAD40E26C7598B00E0AAA3 /* ManagedProtocol.swift */,
-				D276D8F826C7927C00E79ED2 /* NSManagedObjectContext++.swift */,
-				D2CAD41026C75EAD00E0AAA3 /* Item+Managed.swift */,
+				D276D8FC26C8AD8400E79ED2 /* Persistence */,
 				D2CAD3EA26C7595900E0AAA3 /* CoreDataSwiftUI.xcdatamodeld */,
 				D2CAD3E526C7595900E0AAA3 /* Preview Content */,
 			);
@@ -286,6 +297,7 @@
 				D2CAD41326C783B300E0AAA3 /* ContentViewModel.swift in Sources */,
 				D2CAD3E226C7595700E0AAA3 /* ContentView.swift in Sources */,
 				D2CAD3EC26C7595900E0AAA3 /* CoreDataSwiftUI.xcdatamodeld in Sources */,
+				D276D90826C90B1B00E79ED2 /* FilterView.swift in Sources */,
 				D2CAD3E026C7595700E0AAA3 /* CoreDataSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

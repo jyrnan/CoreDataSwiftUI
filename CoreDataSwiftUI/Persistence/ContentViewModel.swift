@@ -48,8 +48,10 @@ class ContentViewModel<A: NSManagedObject & Managed>: NSObject, ObservableObject
     //所以一旦数据发生变化，就调用代理代理方法。一共用3个，实现这个是最基本的
     //通过代理方法对重新赋值
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
-        if let result = fetchedRequestController.fetchedObjects {
-            items = result
+        
+        if let result = self.fetchedRequestController.fetchedObjects {
+            self.items = result
         }
+        
     }
 }
